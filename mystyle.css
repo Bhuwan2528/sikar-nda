@@ -1,4 +1,6 @@
-
+body{
+  overflow-x: hidden;
+}
 
 /* HEADER */
 .ph-header {
@@ -227,7 +229,8 @@
   position: absolute;
   top: 25px;
   left: 40px;
-  width: 70px;
+  width: 120px;
+    rotate: -10deg;
 }
 
 /* Container */
@@ -242,11 +245,19 @@
   font-size: 34px;
   font-weight: 700;
   color: #0b2c6d;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 14px;
+}
+.facilities-section .section-desc{
+  width: 85%;
+  font-size: 16px;
+  color: #222;
+  text-align: center;
+  margin-inline: auto;
+  margin-bottom: 60px;
 }
 
 .facilities-section .section-title span {
@@ -310,30 +321,12 @@
 
 /* Text */
 .facility-card p {
-  font-size: 14.5px;
+  font-size: 15.5px;
   line-height: 1.7;
   color: rgba(255,255,255,0.92);
 }
 
-/* Arrow Button */
-.facility-card .arrow-btn {
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  background: #ffffff;
-  color: #051342;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  bottom: -21px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 16px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
-  transition: all 0.35s ease;
-  margin-top: -20px;
-}
+
 
 /* Hover Effects */
 .facility-card:hover {
@@ -372,7 +365,16 @@
   .facilities-section .section-title {
     font-size: 28px;
     margin-bottom: 45px;
+    gap: 0;
   }
+  .facilities-section .section-desc {
+    width: 95%;
+}
+
+.facilities-section .arrow-top{
+  display: none;
+}
+
 }
 
 
@@ -494,6 +496,7 @@
   padding: 90px 20px;
   background: #f9fafb;
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 .leadership-messages .container {
@@ -1264,4 +1267,388 @@
   .admission-header h2 {
     font-size: 28px;
   }
+}
+
+
+
+
+
+
+/* ==============================
+   ACHIEVEMENT PANEL – TRUE PREMIUM
+   ============================== */
+
+:root {
+  --ink-blue: #0b1f44;
+  --steel-blue: #1f3b73;
+  --soft-blue: #5f7fbf;
+  --mist-blue: #f1f5ff;
+  --line-blue: #d8e1f5;
+  --card-white: #ffffff;
+}
+
+/* ===== SECTION BASE ===== */
+.achievement-panel {
+  background:
+    radial-gradient(
+      1200px 400px at 50% -100px,
+      #e9f0ff,
+      transparent 60%
+    ),
+    linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #f4f7ff 45%,
+      #ffffff 100%
+    );
+  padding: 100px 20px;
+  font-family: "Poppins", sans-serif;
+  color: var(--ink-blue);
+}
+
+/* ===== HEADING ===== */
+.achievement-panel h2 {
+  text-align: center;
+  font-size: 44px;
+  font-weight: 700;
+  color: var(--ink-blue);
+  letter-spacing: 0.6px;
+}
+
+.achievement-subtitle {
+  text-align: center;
+  margin-top: 14px;
+  font-size: 20px;
+  color: var(--steel-blue);
+  opacity: 0.85;
+}
+
+/* ===== MAIN GRID ===== */
+.achievement-wrapper {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: 1fr 0.9fr 1fr;
+  gap: 60px;
+  align-items: center;
+  position: relative;
+}
+
+/* ===== LEFT & RIGHT PANELS ===== */
+.achievement-column {
+  background: var(--card-white);
+  border-radius: 24px;
+  padding: 40px 36px;
+  border: 1px solid var(--line-blue);
+  box-shadow:
+    0 25px 60px rgba(11, 31, 68, 0.08),
+    0 8px 20px rgba(11, 31, 68, 0.04);
+}
+
+/* Section titles */
+.achievement-column h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--ink-blue);
+  margin-bottom: 26px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--line-blue);
+}
+
+/* ===== LIST ITEMS ===== */
+.achievement-column ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.achievement-column ul li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 13px 0;
+  font-size: 17px;
+  color: var(--steel-blue);
+  border-bottom: 1px dashed #c7d1e7;
+}
+
+.achievement-column ul li:last-child {
+  border-bottom: none;
+}
+
+/* Number badge – subtle premium */
+.achievement-column ul li span {
+  min-width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  background:
+    linear-gradient(
+      180deg,
+      #f6f9ff,
+      #e8efff
+    );
+  color: var(--ink-blue);
+  font-weight: 700;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line-blue);
+}
+
+/* ===== CENTER FEATURE (HERO) ===== */
+.achievement-center {
+  background:
+    linear-gradient(
+      180deg,
+      #ffffff,
+      #f5f8ff
+    );
+  border-radius: 32px;
+  padding: 45px 28px;
+  align-self: center;
+  text-align: center;
+  border: 1px solid var(--line-blue);
+  box-shadow:
+    0 40px 90px rgba(11, 31, 68, 0.14),
+    0 10px 30px rgba(11, 31, 68, 0.08);
+  position: relative;
+}
+
+/* subtle inner glow */
+.achievement-center::before {
+  content: "";
+  position: absolute;
+  inset: 12px;
+  border-radius: 26px;
+  background: radial-gradient(
+    circle at top,
+    rgba(95, 127, 191, 0.12),
+    transparent 70%
+  );
+  pointer-events: none;
+}
+
+.achievement-center h4 {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: var(--soft-blue);
+}
+
+.big-number {
+  font-size: 96px;
+  font-weight: 800;
+  margin: 20px 0 12px;
+  color: var(--ink-blue);
+  line-height: 1;
+}
+
+.achievement-center p {
+  font-size: 14px;
+  color: var(--steel-blue);
+}
+
+/* ===== FOOT BADGE ===== */
+.achievement-badge {
+  margin-top: 80px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--ink-blue);
+  letter-spacing: 0.4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.achievement-badge i {
+  font-size: 28px;
+  color:rgb(255, 183, 0);
+}
+
+
+/* ==============================
+   RESPONSIVE – PREMIUM MOBILE
+   ============================== */
+
+@media (max-width: 992px) {
+  .achievement-wrapper {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .achievement-center {
+    order: -1;
+  }
+}
+
+@media (max-width: 600px) {
+  .achievement-panel {
+    padding: 80px 16px;
+  }
+
+  .achievement-panel h2 {
+    font-size: 34px;
+  }
+
+  .achievement-column {
+    padding: 30px 24px;
+  }
+
+  .achievement-column h3 {
+    text-align: center;
+  }
+
+  .achievement-column ul li {
+    justify-content: space-between;
+    font-size: 16px;
+  }
+
+  .achievement-center {
+    padding: 50px 22px;
+  }
+
+  .big-number {
+    font-size: 68px;
+  }
+
+  .achievement-badge {
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 0 10px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* ===== BREADCRUMB SLIDER ===== */
+.breadcrumb-slider {
+  width: 100%;
+  max-width: 460px;   /* breadcrumb side ke liye perfect */
+  height: 320px;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 20px 45px rgba(0,0,0,0.12);
+  position: relative;
+  background: #fff;
+}
+
+.slider-track {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s ease-in-out;
+}
+
+.slider-track img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .breadcrumb-slider {
+    max-width: 100%;
+    height: 200px;
+    margin-top: 20px;
+  }
+}
+
+
+
+
+
+
+
+/* ===== MODAL OVERLAY ===== */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+/* ===== MODAL BOX ===== */
+.modal-box {
+  background: #ffffff;
+  width: 100%;
+  max-width: 420px;
+  padding: 35px 30px;
+  border-radius: 20px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.25);
+  position: relative;
+  animation: popupFade 0.35s ease;
+}
+
+@keyframes popupFade {
+  from {
+    transform: translateY(30px) scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+.modal-box h3 {
+  margin-bottom: 8px;
+  color: #0f2a5f;
+}
+
+.modal-box p {
+  font-size: 14px;
+  color: #5c6f92;
+  margin-bottom: 20px;
+}
+
+/* ===== FORM ===== */
+.admission-form input,
+.admission-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 14px;
+  border-radius: 10px;
+  border: 1px solid #dce3f3;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.admission-form textarea {
+  resize: none;
+}
+
+.admission-form input:focus,
+.admission-form textarea:focus {
+  outline: none;
+  border-color: #1d3f8b;
+}
+
+/* ===== CLOSE BUTTON ===== */
+.modal-close {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: #999;
+}
+
+.modal-close:hover {
+  color: #000;
 }

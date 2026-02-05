@@ -196,10 +196,18 @@
                </div>
             </div>
             <div class="col-xxl-7 col-xl-6 col-lg-6 col-md-6">
-               <div class="it-breadcrumb-thumb z-index-1 text-end">
-                  <img src="assets/img/breadcrumb/course-v1-breadcrumb.jpg" alt="">
-                  <img class="it-breadcrumb-shape-2" src="assets/img/shape/breadcrumb-1-2.png" alt="">
+               <div class="breadcrumb-slider">
+               <div class="slider-track">
+                  <img src="assets/images/yoga1.jpg" alt="Achievement 1">
+                  <img src="assets/images/yoga2.jpg" alt="Achievement 1">
+                  <img src="assets/images/sports2.jfif" alt="Achievement 2">
+                  <img src="assets/images/staff1.jpg" alt="Achievement 3">
+                  <img src="assets/images/cele1.jpg" alt="Achievement 1">
+                  <img src="assets/images/cele2.jpg" alt="Achievement 2">
+                  <img src="assets/images/sports1.jfif" alt="Achievement 3">
                </div>
+               </div>
+
             </div>
          </div>
       </div>
@@ -289,7 +297,7 @@
 
     <!-- CTA Buttons -->
     <div class="admission-cta">
-      <a href="https://bknps.com/Resources/Upload/Download/addmission_form.pdf" class="btn-primary">Admission Form</a>
+      <a href="#" class="btn-primary">Admission Form</a>
       <a href="https://bknps.com/Resources/Upload/Download/fee_structure.pdf" class="btn-outline">Fee Structure</a>
     </div>
 
@@ -468,6 +476,29 @@
    <!-- footer-area-end -->
 
    </footer>   
+
+
+
+
+   <!-- ADMISSION POPUP -->
+<div class="modal-overlay" id="admissionModal">
+  <div class="modal-box">
+    <button class="modal-close" id="closeModal">&times;</button>
+
+    <h3>Admission Enquiry</h3>
+    <p>Please fill in your details. Our team will contact you soon.</p>
+
+    <form class="admission-form">
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <input type="tel" placeholder="Mobile Number" required>
+      <textarea placeholder="Address" rows="1"></textarea>
+
+      <button type="submit" class="btn-primary">Submit</button>
+    </form>
+  </div>
+</div>
+
 
    <!-- JS  Libraries -->
    <script src="assets/js/jquery.js"></script>                     

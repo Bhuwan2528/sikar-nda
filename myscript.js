@@ -57,3 +57,46 @@ cards.forEach(card => {
   card.style.transform = "translateY(40px)";
   observer.observe(card);
 });
+
+
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const track = document.querySelector(".slider-track");
+    const slides = document.querySelectorAll(".slider-track img");
+
+    if (!track || slides.length === 0) return;
+
+    let index = 0;
+    const totalSlides = slides.length;
+
+    setInterval(() => {
+      index = (index + 1) % totalSlides;
+      track.style.transform = `translateX(-${index * 100}%)`;
+      track.style.transition = "transform 0.6s ease-in-out";
+    }, 2500); // 1 second
+  });
+
+
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const openBtn = document.querySelector(".btn-primary");
+    const modal = document.getElementById("admissionModal");
+    const closeBtn = document.getElementById("closeModal");
+
+    openBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+      modal.style.display = "flex";
+    });
+
+    closeBtn.addEventListener("click", function () {
+      modal.style.display = "none";
+    });
+
+    modal.addEventListener("click", function (e) {
+      if (e.target === modal) {
+        modal.style.display = "none";
+      }
+    });
+  });

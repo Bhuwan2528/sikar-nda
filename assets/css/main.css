@@ -11702,7 +11702,7 @@ input[type=radio] {
   color: var(--it-theme-2);
 }
 .it-hero-experience-box.experience-box-style-2 .it-hero-experience-icon i {
-  background-color: var(--it-theme-1);
+  background-color: var(--it-theme-2);
 }
 .it-hero-experience-text span {
   display: block;
@@ -13872,7 +13872,7 @@ input[type=radio] {
   background-color: var(--it-theme-1);
 }
 .it-hero-10-area .it-hero-experience-icon svg {
-  color: var(--it-common-white);
+  color: var(--it-theme-1);
 }
 .it-hero-10-title {
   font-size: 60px;
