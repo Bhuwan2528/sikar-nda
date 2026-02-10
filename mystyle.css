@@ -517,7 +517,7 @@ contain
 
 @media (max-width: 576px) {
   .about-academy {
-    padding: 70px 16px;
+    padding: 70px 0px;
   }
 
   .about-content h3 {
@@ -2332,4 +2332,87 @@ contain
   object-fit: cover;    /* 👈 image crop hogi, stretch nahi */
   display: block;
   transition: transform 0.4s ease;
+}
+
+
+
+.edu-stats {
+  padding: 80px 16px;
+background: linear-gradient(
+  135deg,
+  #071a2f 0%,
+  #0b2c4a 45%,
+  #123c63 100%
+);
+
+}
+
+.edu-stats__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.edu-stats__card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 20px 10px;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.edu-stats__card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 22px 50px rgba(0,0,0,0.12);
+}
+
+.edu-stats__icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 18px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0b1c39, #ad0f1f);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 26px;
+}
+
+.edu-stats__number {
+  font-size: 34px;
+  font-weight: 900;
+  color: #0b1c39;
+  margin-bottom: 6px;
+}
+
+.edu-stats__label {
+  font-size: 16px;
+  color: #555;
+  font-weight: 500;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 1024px) {
+  .edu-stats__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .edu-stats {
+    padding: 60px 14px;
+  }
+
+  .edu-stats__container {
+    grid-template-columns: 1fr;
+  }
+
+  .edu-stats__number {
+    font-size: 30px;
+  }
 }
